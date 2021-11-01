@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+{% load static %}
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Multimind Creations | Salary Slip</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/img/favicon.ico'%}">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.transitions.css'%}">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css'%}">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/educate-custon-icon.css'%}">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/morrisjs/morris.css'%}">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/scrollbar/jquery.mCustomScrollbar.min.css'%}">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/metisMenu/metisMenu.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/metisMenu/metisMenu-vertical.css'%}">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/calendar/fullcalendar.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/calendar/fullcalendar.print.min.css'%}">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js'%}"></script>
+</head>
+
+    <style>
+            .dz-default{
+                display:none;
+            }
+        </style>
+</head>
+
+<body>
+
+
+<div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="salary_slip"><img class="main-logo" src="{% static 'images/icons/logo.png' %}" style="height:40px;width:160px;margin-top:5px;" alt="" /></a>
+            </div><hr>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li class="active">
+                            <a class="has-arrow" href="/index">
+								   <span class="educate-icon educate-home icon-wrap"></span>
+								   <span class="mini-click-non">Salary Slip</span>
+								</a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li><a title="Create" href="salary_slip"><span class="mini-sub-pro">Create Salary Slip</span></a></li>
+                            </ul>
+
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li><a title="Create" href="/view"><span class="mini-sub-pro">Search</span></a></li>
+                            </ul>
+
+                            {% comment %} <ul class="submenu-angle" aria-expanded="true">
+                                <li><a title="Create" href="/show_all"><span class="mini-sub-pro">Employee Details</span></a></li>
+                            </ul> {% endcomment %}
+
+                        </li>
+                        
+                    </ul>
+                   
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html"><img class="main-logo" src="{% static 'images/icons/logo.png' %}" style="height:40px;width:160px;" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+													<i class="educate-icon educate-nav"></i>
+											</button>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <!-- Mobile Menu end -->
+
+        </div>
+   
+        <div class="courses-area mg-b-15 mg-t-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-30 col-md-30 col-sm-30 col-xs-30">
+                        <div class="white-box">
+                            <div style="width:100%"> 
+                            <div style='float:left;width:50%'><h3 class="box-title">Welcome to Multimind Creations</h3></div>
+                            <div style='float:left;width:50%;text-align:right;'><a class="btn btn-primary" href='/logout'>Logout</a></div>
+                            </div>                                                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+<div class="single-pro-review-area mt-t-30 mg-b-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-payment-inner-st">
+                            <ul id="myTabedu1" class="tab-review-design">
+                                <li class="active"><a href="#description">Create Salary Slip</a></li>
+                               
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div id="dropzone1" class="pro-ad">
+
+
+                                                    <form method="POST" class="post-form" action="/update/{{employee.id}}">  
+                                                                            {% csrf_token %}  
+                                                                                                                            <div class="row">
+
+
+                                                        
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <h4 style="color:#006DF0;">PAYSLIP FOR THE MONTH OF(MM/YY)</h4>
+                                                  
+                                                                <div class="form-group" style="width:32%;">
+                                                                    <label>Month and Year :</label>
+                                                                      <input type="month" name="month_year" id="month_year" required maxlength="20" value="{{ employee.month_year }}"/>  
+                                                                </div>
+                                                                
+                                                               
+                                                            </div>
+
+
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <h4 style="color:#006DF0;">Basic Details</h4>
+                                                            <hr>
+                                                                <div class="form-group">
+                                                                    <label>Name :</label>
+                                                                   <input type="text" name="name" id="name" class="form-control" required maxlength="20" value="{{ employee.name }}"/>  
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Employee ID :</label>
+                                                                    <input type="text" name="empId" id="empId" class="form-control" required maxlength="20" value="{{ employee.empId }}"/> 
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label >Joining Date :</label>
+                                                                   <input type="date" name="joinDate" id="joinDate" class="form-control" required maxlength="20" value="{{ employee.joinDate }}"/>  
+                                                                </div> 
+                                                                <div class="form-group">
+                                                                    <label >Bank Name :</label>
+                                                                    <input type="text" name="bankName" id="bankName" class="form-control" required maxlength="bankName" value="{{ employee.bankName }}"/> 
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label >Account No :</label>
+                                                                    <input type="text" name="accountNo" id="accountNo" class="form-control" required maxlength="20" value="{{ employee.accountNo }}"/> 
+                                                                </div>
+                                                               
+                                                            </div><!--###########--><br>
+                                                                    
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><br>
+                                                            <hr>
+                                                                <div class="form-group">
+                                                                    <label >IFSC :</label>
+                                                                     <input type="text" name="ifsc" id="ifsc" class="form-control" required maxlength="20" value="{{ employee.ifsc }}"/>  
+                                                                </div>
+                                                          
+                                                                <div class="form-group">
+                                                                <label >PAN No :</label>
+                                                                    <input type="text" name="panNo" id="panNo" class="form-control" required maxlength="20" value="{{ employee.panNo }}"/>  
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Department :</label>
+                                                                    <input type="text" name="department" id="department" class="form-control" required maxlength="20" value="{{ employee.department }}"/>  
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label >Months of Days :</label>
+                                                                    <input type="number" name="months_of_days" id="months_of_days" class="form-control" required maxlength="20" value="{{ employee.months_of_days }}"/>  
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label >Designation :</label>
+                                                                     <input type="text" name="designation" id="designation" class="form-control" required maxlength="20" value="{{ employee.designation }}"/>
+                                                                </div>                                                                                                                           
+                                                            </div><!--###########-->
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><br>
+                                                            <hr>
+                                                                <div class="form-group">
+                                                                    <label  >Arrear Days :</label>
+                                                                    <input type="text" name="arrearDays" id="arrearDays" class="form-control" required maxlength="20" value="{{ employee.arrearDays }}"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label >Location :</label>
+                                                                    <input type="text" name="location" id="location" class="form-control" required maxlength="20" value="{{ employee.location }}"/> 
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label  >Over Time :</label>
+                                                                     <input type="text" name="Over_Time" id="Over_Time" class="form-control" required maxlength="20" value="{{ employee.Over_Time }}"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>Days Paid :</label>
+                                                                    <input type="text" name="daysPaid" id="daysPaid" class="form-control" required maxlength="20" value="{{ employee.daysPaid }}"/>  
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label >Days LWP :</label>
+                                                                    <input type="text" name="daysLWP" id="daysLWP" class="form-control" required maxlength="100" value="{{ employee.daysLWP }}" />  
+                                                                </div>
+                                                            </div>
+                                                        </div><!--###########################-->
+                                                        <hr>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                                <h4 style="color:#006DF0;">Salary Rates(Rs)</h4>
+                                                                <div class="form-group">
+                                                                    <label >Basic :</label>
+                                                                    <input type="number" name="basic" id="basic" class="form-control" required maxlength="100" value="{{ employee.basic }}" /> 
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>HRA :</label>
+                                                                    <input type="number" name="hra" id="hra" class="form-control" required maxlength="100" value="{{ employee.hra }}" />  
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Other :</label>
+                                                                   <input type="number" name="other" id="other" class="form-control" required maxlength="100" value="{{ employee.other }}" />  
+                                                                </div>                                                                                                                           
+                                                            </div><!--###########################-->
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                                <h4 style="color:#006DF0;">Earning Current Month(Rs)</h4>
+                                                                <div class="form-group">
+                                                                    <label>Basic Salary :</label>
+                                                                     <input type="number" name="basicSalary" id="basicSalary" class="form-control" required maxlength="100" value="{{ employee.basicSalary }}" /> 
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label >HRA :</label>
+                                                                     <input type="number" name="ecm_hra" id="ecm_hra" class="form-control" required maxlength="100" value="{{ employee.ecm_hra }}" />  
+                                                                </div>                                                               
+                                                                <div class="form-group">
+                                                                <label>Other :</label>
+                                                                    <input type="number" name="ecm_other" id="ecm_other" class="form-control" required maxlength="100" value="{{ employee.ecm_other }}" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Incentive :</label>
+                                                                    <input type="number" name="incentive" id="incentive" class="form-control" required maxlength="100" value="{{ employee.incentive }}" /> 
+                                                                </div>
+                                                            </div>
+                                                            <!--###########################-->
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                                <h4 style="color:#006DF0;">Deduction(Rs)</h4>
+                                                                <div class="form-group">
+                                                                    <label>PF :</label>
+                                                                    <input type="number" name="pf" id="pf" class="form-control" required maxlength="100" value="{{ employee.pf }}" />
+                                                                </div>   
+                                                                <div class="form-group">
+                                                                    <label>ESI :</label>
+                                                                    <input type="number" name="esi" id="esi" class="form-control" required maxlength="100" value="{{ employee.esi }}" />
+                                                                </div>   
+                                                                <div class="form-group">
+                                                                    <label>TDS :</label>
+                                                                    <input type="number" name="tds" id="tds" class="form-control"  required maxlength="100" value="{{ employee.tds }}" />  
+                                                                </div>                                                        
+                                                        </div>          
+                                                                    
+
+
+                                                                    
+                                                            <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="payment-adress">
+                                                                <hr>
+                                                                <input type="submit" class="btn btn-primary waves-effect waves-light" value="update">
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                                    </form>  
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+         <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-copy-right">
+                        <p>Copyright © 2020. All rights reserved by <a href="http://multimindcreations.com">Multimind Creations</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery
+		============================================ -->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="{% static 'js/jquery-price-slider.js' %}"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="{% static 'js/counterup/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/counterup/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/counterup/counterup-active.js' %}"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="{% static 'js/scrollbar/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/scrollbar/mCustomScrollbar-active.js' %}"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="{% static 'js/metisMenu/metisMenu.min.js' %}"></script>
+    <script src="{% static 'js/metisMenu/metisMenu-active.js' %}"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="{% static 'js/morrisjs/raphael-min.js' %}"></script>
+    <script src="{% static 'js/morrisjs/morris.js' %}"></script>
+    <script src="{% static 'js/morrisjs/morris-active.js' %}"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="{% static 'js/sparkline/jquery.sparkline.min.js' %}"></script>
+    <script src="{% static 'js/sparkline/jquery.charts-sparkline.js' %}"></script>
+    <script src="{% static 'js/sparkline/sparkline-active.js' %}"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="{% static 'js/calendar/moment.min.js' %}"></script>
+    <script src="{% static 'js/calendar/fullcalendar.min.js' %}"></script>
+    <script src="{% static 'js/calendar/fullcalendar-active.js' %}"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- tawk chat JS
+    <!-- tawk chat JS
+		============================================ -->
+</body>
+
+</html>
+
+</body>  
+</html>  

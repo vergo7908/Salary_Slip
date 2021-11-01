@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+  {% load static %}
+  
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>PDF</title>
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  text-align:left;
+}
+</style>
+
+
+</head>
+
+
+
+<body>
+
+<div style='border:1.5px solid black;'>
+
+{% comment %} <div class="row">
+
+     <img src="http://multimindmaps.com/images/Maps%20Logo.png" style='width:180px;height:50px;margin-left:25px;margin-top:50%' alt="images"> 
+      <span style='font-family:arial;font-size:25px;float:left;'>Multimind Creations</span><br>
+      <span  style='font-family:times new roman;font-size:13px;float:left'>99, 1st Floor, M.B. Road ,(Next to Basist Complex)<br>
+      Khanpur,New Delhi(Delhi)<br>
+      Pin 110062</span> 
+</div>
+   {% endcomment %}
+
+
+
+
+        
+
+<table style='padding-top:1.5px;padding:1.5px;'>
+
+<tr style='color:#00008B;'>
+            <th colspan="2">
+
+            <img src="http://multimindcreations.com/images/MMC.png" style='width:170px;height:70px;margin-left:25px;margin-top:50%;' alt="images"> 
+
+            
+           </th>
+           <th colspan="4" style="color:black;margin-left:20px;">
+            <span  style="font-size:20px;">Multimind Creations</span><br>
+            <span >99, 1st Floor, M.B. Road ,(Next to Basist Complex)<br>
+            Khanpur,New Delhi(Delhi)<br>
+            Pin 110062</span> 
+           </th>
+</tr>
+
+
+<tr>
+           <th colspan="6" style="background-color:lightgrey;color:black;text-align:center;font-size:14px;">
+
+           <b>PAYSLIP FOR THE MONTH OF {{ employee.month_year }}</b>
+
+</th>
+</tr>
+
+  <tr style='color:#00008B;' >
+            <th style="margin-left:3px;padding-top:4px"><b> Name</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.name }} </td>
+            <th style="margin-left:3px;padding-top:4px"><b> Employee ID</b></th>
+            <td style="margin-left:3px;padding-top:4px">  {{employee.empId }}</td>
+            <th style="margin-left:3px;padding-top:4px"><b> Joining Date</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.joinDate }}</td>
+ 
+  
+  </tr>
+
+  <tr style='color:#00008B;'>
+            <th style="margin-left:3px;padding-top:4px"><b> Bank Name</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.bankName }} </td>
+            <th style="margin-left:3px;padding-top:4px"><b> Account No</b></th>
+            <td style="margin-left:3px;padding-top:4px">  {{employee.accountNo }}</td>
+            <th style="margin-left:3px;padding-top:4px"><b> IFSC</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.ifsc }}</td>
+ 
+  
+  </tr>
+
+
+  <tr style='color:#00008B;'>
+            
+            <th style="margin-left:3px;padding-top:4px"><b> PAN No</b></th>
+            <td style="margin-left:3px;padding-top:4px">  {{employee.panNo }}</td>
+            <th style="margin-left:3px;padding-top:4px"><b> Department</b></th>
+            <td style="margin-left:3px;padding-top:4px">  {{employee.department }}</td>
+            <th style="margin-left:3px;padding-top:4px"><b> Months_Of_Days</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.months_of_days }} </td>
+
+  </tr>
+
+  <tr style='color:#00008B;'>
+            <th style="margin-left:3px;padding-top:4px"><b> Designation</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.designation }} </td>
+            <th style="margin-left:3px;padding-top:4px"><b> Days Paid</b></th>
+            <td style="margin-left:3px;padding-top:4px">  {{employee.daysPaid }}</td>
+            <th style="margin-left:3px;padding-top:4px"><b> Days LWP</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.daysLWP }}</td>
+  </tr>
+
+  <tr style='color:#00008B;'>
+            <th style="margin-left:3px;padding-top:4px"><b>  Arrear Days</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.arrearDays }} </td>
+            <th style="margin-left:3px;padding-top:4px"><b> Location</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.location }}</td>
+            <th style="margin-left:3px;padding-top:4px"><b> Over Time</b></th>
+            <td style="margin-left:3px;padding-top:4px"> {{employee.Over_Time }}</td>
+  </tr>
+
+  <tr style='color:#00008B;'>
+            <th colspan="2" style="text-align:center;margin-left:5px;padding-top:4px"> <b>Salary Rates(Rs)</b></th>
+            <th colspan="2" style="text-align:center;margin-left:5px;padding-top:4px"> <b>Earning Current Month(Rs) </b></th>
+            <th colspan="2" style="text-align:center;margin-left:5px;padding-top:4px"> <b>Deduction(Rs)</b></th>
+            
+  </tr>
+
+
+  <tr style='color:#00008B;' >
+
+    <th style="margin-left:3px;padding-bottom:7px">
+    <b>Basic</b><br>
+    <b>HRA</b> <br>
+    <b>Other</b> <br>  
+    </th>
+
+    <td style="text-align:right;margin-right:1px;padding-bottom:7px">
+    {{employee.basic}}  <br>
+     {{employee.hra}}   <br>
+     {{employee.other }} <br>  
+    </td>
+
+    <th style="margin-left:3px;padding-top:3px">
+     <b>Basic Salary</b><br>
+     <b>HRA</b> <br>
+     <b>Other</b> <br> 
+     <b>Incentive</b> <br>   
+    </th>
+
+    <td style="text-align:right;margin-right:1px;">
+      {{employee.basicSalary}}  <br>
+     {{employee.ecm_hra}}   <br>
+     {{employee.ecm_other }}  <br>  
+     {{employee.incentive }}  <br> 
+    </td>
+
+
+    <th style="margin-left:3px;padding-bottom:8px">
+     <b>PF</b><br>
+     <b>ESI</b> <br>
+     <b>TDS</b> <br>  
+    </th>
+
+
+    <td style="text-align:right;margin-right:1px;padding-bottom:8px">
+      {{employee.pf}}  <br>
+     {{employee.esi}}   <br>
+     {{employee.tds }}  <br>  
+    </td>
+
+         
+        
+
+  </tr> 
+
+
+    <tr style='color:#00008B;'>
+            <th style="margin-left:3px;padding-top:4px"><b> Total :</b></th>
+            <td style="text-align:right;margin-right:1px;padding-top:4px"> {{employee.total}}  </td>
+            <th style="margin-left:3px;padding-top:4px"><b> Gross Salary :</b></th>
+            <td style="text-align:right;margin-right:1px;padding-top:4px"> {{employee.gross_salary }} </td>
+            <th style="margin-left:3px;padding-top:4px"><b> Total Deduction :</b></th>
+            <td style="text-align:right;margin-right:1px;padding-top:4px">{{employee.total_deduction }} </td>
+ 
+  
+  </tr> 
+
+
+</table>
+
+<div style='border:1px solid black;width:1200px;height:10px;font-family:verdana;font-size:10px;padding-top:6px;padding-bottom:3px;color:#00008B;'><b>&nbsp;Net Pay : {{employee.net_pay }} &nbsp;({{employee.words}} only) </b></div>
+<div style='border:1px solid black;background-color:#C0C0C0;width:1200px;height:10px;font-family:verdana;font-size:10px;padding-top:3px;padding-bottom:3px;color:#00008B;padding-top:4px'>&nbsp;***Note :Since This is Computer Generated Payslip, Hence no Signature is Required.
+</div>
+            
+        
+   
+          
+
+</div>
+        </body>
+
+</html>
+
+
+      
